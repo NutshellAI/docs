@@ -21,24 +21,25 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting started with Nutshell",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "getting-started/download"
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+            "group": "Licenses",
+            "pages": [  
+              "licenses/purchase",
+              "licenses/cancellation" 
             ]
           }
+        ]
+      },
+      {
+        "tab": "Enterprise",
+        "pages": [  
+          "enterprise/overview",
+          "enterprise/pricing"
         ]
       }
     ],
