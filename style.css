@@ -1,0 +1,29 @@
+main {
+    background: #05051e;
+}
+
+#navbar {
+    background: #05051e;
+}
+
+footer {
+    background: #05051e;
+}
+
+#topbar-cta-button > a > span {
+    background-image: linear-gradient(135deg, rgb(146, 106, 255) 0%, rgb(255, 119, 176) 50%, rgb(255, 179, 103) 100%);
+}
+
+.dark\:bg-background-dark\/75:is(.dark *) {
+    background-color: #05051e;
+}
+
+.card {
+    background-color: transparent !important;
+}
+
+:root {
+    --primary: 163 100 211;
+    --primary-light: 163 100 211;
+    --primary-dark: 163 100 211;
+}
