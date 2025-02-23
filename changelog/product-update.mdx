@@ -1,4 +1,187 @@
 ---
-title: Product update
+title: Product Updates
+description: New updates and improvements
 icon: rocket-launch
 ---
+
+<Update label="February 2025">
+  ## New Configuration Schema `docs.json`
+
+  We've introduced a new `docs.json` schema as a replacement for `mint.json`, to support better multi-level versioning, easier visual comprehension, and more consistent terminology. For more information on what's changed, [check out our blog](https://mintlify.com/blog/refactoring-mint-json-into-docs-json).&#x20;
+
+
+
+  Upgrade from `mint.json` to `docs.json` with the following steps:
+
+  1. Make sure your CLI is the latest version
+
+  ```
+  npm i mintlify@latest -g
+  ```
+
+  2. In your docs repository, run
+
+  ```
+  mintlify upgrade
+  ```
+
+  3. Delete your old mint.json file and push your changes
+
+  ## CI Checks
+
+  Automatically lint your docs to find broken links, discover spelling and grammar issues, or enforce writing styles with your own Vale config. Learn more in our [docs](settings/ci).
+
+  ## .md support for LLMs
+
+  All documentation pages are now automatically available as plain Markdown files—just append `.md` to the URL. This makes it easier for LLMs to ingest individual pages from your documentation.
+
+  ## More Themes
+
+  New pre-built themes to modify the look & feel of your docs. Configure via your [docs.json file](/settings/global).
+
+  Now available:
+
+  * Maple
+
+  * Palm
+</Update>
+
+<Update label="January 2025">
+  ## AI Assistant
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="AI Assistant" />
+  </Frame>
+
+  You can now ask AI to make changes to your docs, with the context of all existing documentation. Type in a prompt and the assistant will propose changes by generating a pull request.
+
+  ## GitLab Integration Upgrade
+
+  We've improved our support for syncing with GitLab, such as enabling automated updates and preview deployments. Check out our [docs on GitLab](/settings/gitlab) to get started.
+
+  ## Web Editor
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Web Editor" />
+  </Frame>
+
+  We've revamped our web editor so that you can now update docs with a fully WYSIWYG experience, while syncing with markdown.
+
+  Check out our [docs on getting started with Web Editor](/web-editor).
+
+  ## /llms.txt support
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="llms.txt support" />
+  </Frame>
+
+  All docs instances are now automatically hosted at /llms.txt and /llms-full.txt so that LLMs can easily ingest your documentation. For more information, read the [docs on the new llms.txt standard.](https://llmstxt.org)
+
+  ## Localization
+
+  You can now localize your docs which operates similarly to versioning. Add a `locale` to a version and fixed content in Mintlify like "Was this page helpful?" will also match the locale.
+
+  ### Quality Improvements
+
+  * Return chat & search results based on the current version that the user is reading
+
+  * Authenticate users with OAuth, in addition to JWT or Shared Session tokens.
+</Update>
+
+<Update label="December 2024">
+  ## Changelogs
+
+  Launched a new [Update component](/content/components/update) to make it easier to display and report updates (like this one) to your users.
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Changelog" />
+  </Frame>
+
+  ## Code Line Highlighting
+
+  You can now highlight lines of code in your docs to emphasize and bring attention to important parts by adding a special comment after the language identifier. Use curly braces `{}` and specify line numbers or ranges separated by commas.
+
+  ```javascript Line Highlighting Example {1,3-5}
+  const greeting = "Hello, World!";
+  function sayHello() {
+    console.log(greeting);
+  }
+  sayHello();
+  ```
+
+  ````md
+  ```javascript Line Highlighting Example {1,3-5}
+  const greeting = "Hello, World!";
+  function sayHello() {
+    console.log(greeting);
+  }
+  sayHello();
+  ```
+  ````
+
+  ## Light mode code blocks
+
+  Code blocks now have a light mode variant which can be enabled by adding the following to your `mint.json`:
+
+  ```json
+  "codeBlock": {
+    "mode": "auto"
+  }
+  ```
+
+  ## Advanced Footer
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Advanced Footer" />
+  </Frame>
+
+  You can now add more links to the standard footer. This upgrade
+  provides more consistency between landing pages and docs, or greater customization
+  if you want to spotlight specific pages like socials or status logs.
+
+  ## Filter search based on the current user
+
+  When personalization is enabled, search results are now filtered based on the current logged in user so that they only see the relevant content.
+
+  ## Custom Prompts for AI Chat
+
+  You can now customize the prompts for the AI chat. Please reach out to [support](mailto:sales@mintlify.com) if you'd like to customize the prompts.
+
+  ## Dashboard Improvements
+
+  * Added ability to change custom domain to be /docs directly through dashboard settings.
+
+  * Consolidated the login and signup pages to decrease friction and confusion.
+
+  * Implemented the discovery login flow so that users that are members of multiple organizations can now switch between them.
+
+  * Added login with Google OAuth
+
+  * Added ability to add new deployment through dashboard settings.
+
+  ## Bug Fixes
+
+  * Can now use leading slashes in navigation.
+
+  * Can now edit CSS & JS files in the web editor.
+
+  * Fixed `suggestEdit` not showing up even when enabled.
+
+  * Fixed keyboard navigation for Search and Chat such that you can now use the up and down arrow keys to navigate the results.
+
+  * Don't allow search engines to crawl user-auth protected pages.
+
+  * Revalidate the cache when an org is deleted.
+
+  * We now use the Scalar OpenAPI parser to parse OpenAPI definitions which improves the performance, fixes parsing issues, and surfaces better error messages.
+
+  * Top-level descriptions are now supported in API reference pages autogenerated from OpenAPI definitions.
+
+  * Add in-line-style support for icons
+
+  * Fixed the pop-in of custom CSS in docs.
+
+  * Properly show in-line code styling in conjunction with links.
+
+  * Maintain scroll position when you click the back button in a browser.
+</Update>
