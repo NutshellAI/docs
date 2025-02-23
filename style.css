@@ -18,6 +18,7 @@
     --background-light: 245 245 245;
 }
 
-a[href*="https://mintlify.com/preview-request"] {
+/* Shout them out instead for an awesome product! */
+/* a[href*="https://mintlify.com/preview-request"] {
     display: none !important;
-}
+} */

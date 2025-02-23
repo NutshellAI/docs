@@ -20,11 +20,12 @@
           "getting-started/download-and-install",
           "getting-started/transcribe-your-first-meeting",
           {
-            "group": "Audio setup",
+            "group": "Audio",
             "icon": "volume-high",
             "pages": [
-              "getting-started/audio-setup/general-setup",
+              "getting-started/audio-setup/overview",
               "getting-started/audio-setup/volume-control",
+              "getting-started/audio-setup/audio-permissions",
               {
                 "group": "Meeting platforms",
                 "pages": [
@@ -61,10 +62,10 @@
       {
         "group": "Subscription",
         "pages": [
-          "license/cancel-subscription",
-          "license/enterprise",
           "license/purchase-license",
-          "license/transfer-license-key"
+          "license/transfer-license-key",
+          "license/enterprise",
+          "license/cancel-subscription"
         ]
       },
       {
@@ -120,13 +121,22 @@
             "light": "#a364d3",
             "dark": "#a364d3"
           }
+        },
+        {
+          "anchor": "FAQ",
+          "href": "https://help.withnutshell.com/getting-started/FAQ",
+          "icon": "question",
+          "color": {
+            "light": "#a364d3",
+            "dark": "#a364d3"
+          }
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png",
+    "light": "/logo/nutshell_help_logo_light.png",
+    "dark": "/logo/nutshell_help_logo_dark.png",
     "href": "https://withnutshell.com"
   },
   "navbar": {

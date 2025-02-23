@@ -1,6 +1,146 @@
 ---
 title: Transcribe your first meeting
+description: Learn how to set up and use Nutshell to transcribe your first meeting
 icon: rocket-launch
 ---
 
-use the steps from here: https://mintlify.com/docs/api-playground/mdx/configuration
+<Note>
+  This guide assumes you have completed the installation process. If you encounter any issues during installation, please refer to our [FAQ](/getting-started/FAQ).
+</Note>
+
+## Prerequisites
+
+Before starting this guide:
+- Complete the [Download and Installation](/getting-started/download-and-install) process
+- If you encounter any issues during installation, refer to our [FAQ](/getting-started/FAQ)
+
+## Start to finish: Transcription with Nutshell
+
+For this example, we'll be using the live transcription settings (default) and demonstrating with Zoom. The process is the same for other meeting platforms.
+
+<Accordion title='1. Ensure "Nutshell Speaker" is selected'>
+  When you first open Nutshell, the app creates a virtual audio device called "Nutshell Speaker". This needs to be selected as your system's output device.
+
+  <Warning>
+    If you see a warning about "Nutshell Speaker" not being selected, follow these steps to configure it:
+  </Warning>
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Warning message for Nutshell Speaker" />
+  </Frame>
+
+  <Steps>
+    <Step title="Open System Settings">
+      Navigate to your system's sound settings
+    </Step>
+    <Step title="Select Output Device">
+      Choose "Nutshell Speaker" as your output device
+    </Step>
+  </Steps>
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Selecting Nutshell Speaker in system settings" />
+  </Frame>
+</Accordion>
+
+<Accordion title="2. Configure Your Audio Devices">
+  <Info>
+    Nutshell will use your system's default microphone. You can change this in your system settings if needed.
+  </Info>
+
+  At the top of the Nutshell app, use the dropdown menu to select which speaker device you want to use. If you're using headphones, connect them now.
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Speaker selection dropdown" />
+  </Frame>
+</Accordion>
+
+<Accordion title="3. Start Your First Recording">
+  <Steps>
+    <Step title="Click New Conversation">
+      Look for the "New Conversation" button in the top left corner of the app
+      <Frame>
+        <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="New Conversation button" />
+      </Frame>
+    </Step>
+    
+    <Step title="Start Recording">
+      Click the "Start Recording" button to begin transcription
+      <Frame>
+        <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Start Recording button" />
+      </Frame>
+    </Step>
+  </Steps>
+
+  <Tip>
+    You can start recording even after your meeting has begun. The steps shown here demonstrate starting Nutshell before joining a meeting.
+  </Tip>
+</Accordion>
+
+<Accordion title="4. Join Your Meeting">
+  <Steps>
+    <Step title="Join Your Zoom Meeting">
+      When joining Zoom, ensure "Nutshell Speaker" is selected as your audio output device
+      <Frame>
+        <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Zoom audio settings" />
+      </Frame>
+    </Step>
+  </Steps>
+
+  <Note>
+    The same process applies to other meeting platforms. Always ensure "Nutshell Speaker" is selected as the audio output device.
+  </Note>
+</Accordion>
+
+<Accordion title="5. Stopping Your Transcription Session">
+  ### Stopping the Transcription Session
+
+  Click the pause button in the top right corner to stop the transcription session.
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Stop recording button" />
+  </Frame>
+
+  ### Reviewing and Editing
+
+  After stopping the recording, you can:
+  - Play back the recorded audio
+  - Review the transcription
+  - Re-run transcription if needed for better accuracy
+
+  <Frame>
+    <img src="https://d3r37wwqi2kfse.cloudfront.net/obsidian_promo-min_compressed.png" alt="Playback interface" />
+  </Frame>
+
+  <Tip>
+    You can re-run transcription multiple times on the same recording to improve accuracy or correct any issues.
+  </Tip>
+</Accordion>
+
+## What to do next with your transcription
+
+<CardGroup cols={3}>
+  <Card
+    title="Customize AI Prompts"
+    icon="wand-magic-sparkles"
+    href="/features/ai-prompts"
+  >
+    Learn how to create and customize AI prompts for different meeting types
+  </Card>
+  
+  <Card
+    title="Manage Conversations"
+    icon="folder-tree"
+    href="/features/managing-conversations"
+  >
+    Organize and manage your transcribed conversations effectively
+  </Card>
+  
+  <Card
+    title="Use the AI Chatbot"
+    icon="robot"
+    href="/features/ai-chatbot"
+  >
+    Discover how to leverage the AI chatbot for meeting insights
+  </Card>
+</CardGroup>
