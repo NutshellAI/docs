@@ -156,46 +156,6 @@
     "socials": {
       "x": "https://x.com/nutshell_ai",
       "linkedin": "https://www.linkedin.com/company/nutshellai"
-    },
-    "links": [
-      {
-        "header": "Company",
-        "items": [
-          {
-            "label": "Blog",
-            "href": "https://withnutshell.com/blog"
-          },
-          {
-            "label": "Enterprise",
-            "href": "https://withnutshell.com/enterprise"
-          },
-          {
-            "label": "Public Roadmap",
-            "href": "https://withnutshell.canny.io/"
-          },
-          {
-            "label": "Feedback",
-            "href": "https://withnutshell.canny.io/feature-requests"
-          }
-        ]
-      },
-      {
-        "header": "Policies",
-        "items": [
-          {
-            "label": "Terms and Conditions",
-            "href": "https://withnutshell.com/terms"
-          },
-          {
-            "label": "Privacy Policy",
-            "href": "https://withnutshell.com/privacy"
-          },
-          {
-            "label": "Refund",
-            "href": "https://withnutshell.com/refund"
-          }
-        ]
-      }
-    ]
+    }
   }
 }
