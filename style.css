@@ -10,14 +10,25 @@
     background-color: transparent !important;
 }
 
+.dark\:bg-codeblock {
+    background-color: #090923 !important;
+    border: 1px solid #20213A !important;
+    border-color: #20213A !important;
+}
+
+
+.dark\:border-gray-800\/50 {
+    border-color: #20213A !important;
+}
+
+.dark\:border-white\/10:is(.dark *) {
+    border-color: #20213A !important;
+}
+
 :root {
     --primary: 202 128 224;
     --primary-light: 202 128 224;
     --primary-dark: 202 128 224;
     --background-dark: 5 5 30;
     --background-light: 245 245 245;
-}
-
-a[href*="https://mintlify.com/preview-request"] {
-  display: none !important;
 }
