@@ -14,17 +14,11 @@
     background-color: #090923 !important;
 }
 
-/* .dark\:bg-codeblock {
-    background-color: #090923 !important;
-    border: 1px solid #20213A !important;
-    border-color: #20213A !important;
-} */
-
-.dark\:border-gray-800\/50 {
+.border-standard:is(.dark *) {
     border-color: #20213A !important;
 }
 
-.dark\:border-white\/10:is(.dark *) {
+.dark\:border-gray-800\/50:is(.dark *) {
     border-color: #20213A !important;
 }
 
